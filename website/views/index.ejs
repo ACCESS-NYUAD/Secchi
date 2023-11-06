@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SECCHI UAE</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <%- include('header') %>
+
+    <section class="banner">
+      <div class="column">
+        <div class="section-content">
+          <h1>SECCHI DISK<br /><span>PROJECT</span></h1>
+          <p>
+            The Secchi Disk Project is a collaborative initiative at the
+            intersection of science and citizen engagement, aimed at quantifying
+            ocean turbidity through the utilization of a Secchi Disk. This
+            endeavor is the result of a partnership between NYU Abu Dhabi's
+            Citizen Researcher Program and the esteemed NYUAD ACCESS Lab.
+          </p>
+          <p style="margin-top: 3rem"><strong>A JOINT EFFORT OF</strong></p>
+          <div class="logo_container">
+            <img
+              src="images/access_logo.webp"
+              alt="CR Logo"
+              class="partner-logo"
+            />
+          </div>
+          <div class="logo_container">
+            <img
+              src="images/citizen_researcher_logo.webp"
+              alt="CR Logo"
+              class="partner-logo"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="column" style="justify-content: flex-end">
+        <div class="section-content">
+          <div class="carousel">
+            <img class="carousel-slide" src="images/x.webp" alt="Image 1" />
+            <img class="carousel-slide" src="images/y.webp" alt="Image 2" />
+
+            <div class="carousel-buttons">
+              <div class="carousel-button active"></div>
+              <div class="carousel-button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secchi-description" id="about">
+      <h2>WHAT IS A SECCHI DISK?</h2>
+      <div class="flex-container">
+        <div>
+          <p>
+            The Secchi Disk is a fundamental tool in environmental science and
+            limnology used to measure water clarity and transparency in bodies
+            of water, including lakes, rivers, and oceans. It consists of a
+            circular, flat disk, typically painted with alternating black and
+            white quadrants, attached to a rope or line. This instrument is
+            named after Italian priest and scientist Pietro Angelo Secchi, who
+            developed it in the mid-19th century.
+          </p>
+          <p>
+            To use the Secchi Disk, it is lowered vertically into the water
+            until it disappears from view. The depth at which it vanishes, known
+            as the Secchi depth, is then recorded. This measurement provides
+            valuable insights into the quality of the water and the degree to
+            which light can penetrate through the water column. A shallower
+            Secchi depth usually indicates clearer, less turbid water with
+            greater transparency, while a deeper Secchi depth suggests murkier
+            or more turbid conditions with reduced visibility.
+          </p>
+          <p>
+            Scientists, environmentalists, and researchers commonly employ the
+            Secchi Disk as a cost-effective and straightforward method to assess
+            water quality, monitor changes in aquatic ecosystems, and study the
+            impact of pollutants or sedimentation. It plays a crucial role in
+            understanding the health of aquatic environments and is often
+            integrated into broader water quality monitoring programs.
+            Additionally, citizen scientists and volunteers frequently use
+            Secchi Disks, contributing to community-driven efforts to protect
+            and preserve water resources.
+          </p>
+        </div>
+        <img src="images/secchi-disk.webp" alt="Secchi Disk Image" />
+      </div>
+    </section>
+
+    <section class="contribute-section" id="contribute">
+      <h2>WANT TO CONTRIBUTE TO THE PROJECT?</h2>
+      <p>
+        Here's a video demonstration for you on how to calculate data and
+        contribute as a Citizen Researcher.
+      </p>
+      <div class="video-container">
+        <video controls poster="images/thumbnail.webp">
+          <source
+            src="https://secchi.nyuad.nyu.edu:17220/videos/instructions-en.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="download-app-section">
+      <h2>DOWNLOAD THE APP NOW</h2>
+      <p>
+        The project consists in a continued campaign of measurements of the
+        Secchi disk depth, which is a measure of water transparency. NYUAD shall
+        provide a tool kit where citizen researchers can build their own Secchi
+        Disk, and provide a mobile phone app that allows Citizen Researcher to
+        upload their GPS position and the measured Secchi depth. The data will
+        be used as a teaching tool, as well as for validating our
+        high-resolution Gulf ocean model. You can view the data on the
+        monitoring page.
+      </p>
+      <p>
+        You can download the Secchi UAE app on an Android or an iOS device to
+        start contributing to the project. Scan the QR Code or click on the
+        relevant links.
+      </p>
+      <p>
+        For our privacy policy, please visit this
+        <a href="https://secchi.nyuad.nyu.edu/policy">link.</a>
+      </p>
+      <div class="flex-container">
+        <div class="app-image">
+          <img src="images/qrcode.png" alt="QR Code" />
+        </div>
+
+        <a href="https://play.google.com/store/apps/details?id=com.nyu.access"
+          ><div class="app-image">
+            <img src="images/playstoreBadge.png" alt="Android App" /></div
+        ></a>
+
+        <a href="https://apps.apple.com/ae/app/secchi-uae/id6443993290"
+          ><div class="app-image">
+            <img src="images/appstoreBadge.svg" alt="iOS App" /></div
+        ></a>
+      </div>
+    </section>
+
+    <%- include('footer') %>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>SECCHI UAE</title>
+    <script src="/js/contact.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <%- include('header') %>
+
+    <section class="monitoring" style="min-height: 70vh">
+      <h1 style="margin: 0">Monitoring</h1>
+      <span>Click on pinned points for more details.</span>
+      <br />
+      <br />
+      <div class="flex-container">
+        <div id="map"></div>
+        <div>
+          <div id="details">
+            <p class="element">Latitude: <span class="data"> N/A </span></p>
+            <p class="element">Longitude: <span class="data"> N/A </span></p>
+            <p class="element">Deep depth: <span class="data"> N/A </span></p>
+            <p class="element">
+              Shallow depth: <span class="data"> N/A </span>
+            </p>
+            <p class="element">Time: <span class="data"> N/A </span></p>
+          </div>
+
+          <div style="margin-bottom: 8px;">Legend (Average Depth):</div>
+          <img
+            class="legend"
+            src="/images/colormap_winter.png"
+            alt="Color legend"
+          />
+          <div class="legend-flex">
+            <span>Deep</span>
+            <span>Shallow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('footer') %>
+    <script src="js/map.js"></script>
+  </body>
+</html>
